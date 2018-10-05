@@ -2,20 +2,18 @@ package edu.cnm.deepdive;
 
 public class Sandbox {
 
-  public static void main(String[] args) {
-    int num = 21;
+    int num = 50;
     int x = 20;
     int y = 9;
     int z = 6;
-    boolean nug;
+    int nug;
 
-    while(num >= z){
-      if(num%x==0){
-        nug = true;
-      }
-      if(num/x>1){
-        num -= x;
+    public  boolean isNug() {
+      if ((num % x == 0) || (num % y == 0) || (num % z == 0)) {
+        return true;
+        if () {
+
+        }
       }
     }
-  }
 }

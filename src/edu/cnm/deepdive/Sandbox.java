@@ -1,7 +1,6 @@
 package edu.cnm.deepdive;
 
 import java.util.Scanner;
-import javax.sound.midi.SysexMessage;
 
 public class Sandbox {
 
@@ -9,6 +8,7 @@ public class Sandbox {
 
   public static void main(String[] args) {
     while (true) {
+      System.out.println("Input # of nuggets:");
       if (isNug(in.nextInt())) {
         System.out.println("is nug");
       } else
@@ -16,9 +16,12 @@ public class Sandbox {
     }
   }
     public static boolean isNug ( int num){
-      int x = 20;
-      int y = 9;
-      int z = 6;
+      System.out.println("Input biggest box size:");
+      int x = in.nextInt();
+      System.out.println("Input middle box size:");
+      int y = in.nextInt();
+      System.out.println("Input smallest box size:");
+      int z = in.nextInt();
       boolean nug = true;
       boolean notNug = false;
       while (num >= z) {

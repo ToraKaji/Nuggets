@@ -1,17 +1,21 @@
 package edu.cnm.deepdive;
 
+import java.util.Scanner;
 import javax.sound.midi.SysexMessage;
 
 public class Sandbox {
 
+  static Scanner in = new Scanner(System.in);
+
   public static void main(String[] args) {
-    if (isNug(10)) {
-      System.out.println("is nug");
-    } else System.out.println("not nug");
+    while (true) {
+      if (isNug(in.nextInt())) {
+        System.out.println("is nug");
+      } else
+        System.out.println("not nug");
+    }
   }
-
-
-    public static boolean isNug (int num){
+    public static boolean isNug ( int num){
       int x = 20;
       int y = 9;
       int z = 6;
@@ -34,4 +38,5 @@ public class Sandbox {
       }
       return notNug;
     }
-  }
+
+}

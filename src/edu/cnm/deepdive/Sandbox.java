@@ -7,8 +7,8 @@ public class Sandbox {
   static Scanner in = new Scanner(System.in);
 
   public static void main(String[] args) {
+    nugger nug = new nugger();
     while (true) {
-      nugger nug = new nugger();
       nug.setup();
       if (nug.isNug()) {
         System.out.println("Does have solution:");
